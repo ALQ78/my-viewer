@@ -5,6 +5,7 @@ description = ""
 authors = [
     {name = "ALQ78",email = "ALQ78@users.noreply.github.com"}
 ]
+license = { text = "MIT" }
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
@@ -12,7 +13,12 @@ dependencies = [
 
 [tool.poetry]
 packages = [{include = "my_viewer", from = "src"}]
+version = "0.1.0"
+license = "MIT"
 
+repository = "https://github.com/ALQ78/mon-projet"
+homepage = "https://github.com/ALQ78/mon-projet"
+documentation = "https://github.com/TonUtilisateur/mon-projet/wiki"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
