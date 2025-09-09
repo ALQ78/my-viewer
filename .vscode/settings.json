@@ -1,0 +1,10 @@
+{
+  "files.exclude": {
+    "data/": true,
+    ".venv/": true
+  },
+  "python.analysis.exclude": [
+    "**/data",
+    "**/.venv"
+  ]
+}
