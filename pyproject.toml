@@ -9,6 +9,8 @@ license = { text = "MIT" }
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "numpy (>=2.3.3,<3.0.0)",
+    "pyqtgraph (>=0.13.7,<0.14.0)"
 ]
 
 [tool.poetry]
