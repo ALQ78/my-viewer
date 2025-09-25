@@ -1,7 +1,8 @@
 # visualiseur d'images
 ## Description
-Un visualiseur d'images en python, permettant de comparer le contenu de deux images, exprimées en tableaux numpy (H,W,1), en niveau de gris.
-On doit pouvoir zoomer et se déplacer simultanément dans les images afin de comparer des détails.
+Un visualiseur d'images en python, permettant de comparer le contenu de deux images, exprimées par un tableaux numpy (H,W,1), en niveau de gris.
+On peut zoomer et se déplacer de façon synchronisée dans les images afin de comparer des détails.
+Les coordonnées dans les images du pixel en haut à gauche sont affichées.
 ## Installation
 ## Installation
 
