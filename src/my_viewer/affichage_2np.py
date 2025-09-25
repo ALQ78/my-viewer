@@ -14,8 +14,9 @@ def affiche_deux_images(img1: np.ndarray, img2: np.ndarray, titre: str = "Affich
         app = QtWidgets.QApplication(sys.argv)
 
     win = QtWidgets.QWidget()
-    layout = QtWidgets.QHBoxLayout(win)
-
+    main_layout = QtWidgets.QVBoxLayout(win)
+    images_layout = QtWidgets.QHBoxLayout()
+    main_layout.addLayout(images_layout)
 
     # Création de deux ImageView sans histogramme, ROI ni boutons
     view1 = pg.ImageView(view=pg.PlotItem())
@@ -36,13 +37,12 @@ def affiche_deux_images(img1: np.ndarray, img2: np.ndarray, titre: str = "Affich
     view1.setImage(img1)
     view2.setImage(img2)
 
-    layout.addWidget(view1)
-    layout.addWidget(view2)
-
+    images_layout.addWidget(view1)
+    images_layout.addWidget(view2)
 
     # Label pour afficher les coordonnées du pixel en haut à gauche
     coord_label = QtWidgets.QLabel()
-    layout.addWidget(coord_label)
+    main_layout.addWidget(coord_label)
 
     def update_label():
         # On prend la vue de view1 (elles sont synchronisées)
