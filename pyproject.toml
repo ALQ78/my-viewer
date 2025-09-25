@@ -15,12 +15,14 @@ dependencies = [
 
 [tool.poetry]
 packages = [{include = "my_viewer", from = "src"}]
-version = "0.1.0"
-license = "MIT"
 
 repository = "https://github.com/ALQ78/mon-projet"
 homepage = "https://github.com/ALQ78/mon-projet"
 documentation = "https://github.com/TonUtilisateur/mon-projet/wiki"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.4.2"
+pytest-mock = "^3.15.1"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
