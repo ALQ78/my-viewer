@@ -17,9 +17,9 @@ dependencies = [
 [tool.poetry]
 packages = [{include = "my_viewer", from = "src"}]
 
-repository = "https://github.com/ALQ78/mon-projet"
-homepage = "https://github.com/ALQ78/mon-projet"
-documentation = "https://github.com/TonUtilisateur/mon-projet/wiki"
+repository = "https://github.com/ALQ78/my-viewer"
+homepage = "https://github.com/ALQ78/my-viewer"
+documentation = "https://github.com/ALQ78/my-viewer/wiki"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.4.2"
